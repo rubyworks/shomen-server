@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+require 'shomen/server'
+
+Shomen::Server.start(*ARGV)
+

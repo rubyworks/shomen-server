@@ -1,0 +1,7 @@
+--title "Shomen Server"
+--private
+--protected
+-r README.md
+lib/
+-
+[A-Z]*.*

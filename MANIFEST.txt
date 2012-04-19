@@ -1,0 +1,6 @@
+#!mast .ruby .yardopts bin lib spec test [A-Z]*.*
+.yardopts
+bin/shomen-server
+lib/shomen-server.rb
+LICENSE.txt
+README.md
