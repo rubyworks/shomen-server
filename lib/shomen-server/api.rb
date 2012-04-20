@@ -1,11 +1,11 @@
 module Shomen
-
-  class Server
+  module Server
 
     #
     class API
 
-      def initialize(settings)
+      def initialize(server, settings)
+        @server  = server
         @path    = settings[:path]
         @name    = settings[:name]
         @version = settings[:version]
@@ -28,8 +28,30 @@ module Shomen
         @title
       end
 
+      def route
+        "#{name}-#{version}"
+      end
+
+      def link
+        "#{name}-#{version}?doc=docs/#{doc_file}"
+      end
+
+      #
+      def doc_path
+        @doc_path ||= File.join(@server.docs_directory, doc_file)
+      end
+
+      #
+      def doc_file
+        "#{name}-#{version}.json"
+      end
+
+      # TODO: update to date instead?
+      def has_doc?
+        File.exist?(doc_path)
+      end
+
     end
 
   end
-
 end

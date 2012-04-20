@@ -1,11 +1,16 @@
 <html>
 <head>
   <title>Shomen Server</title>
+  <style>
+    #main { text-align: center; }
+  </style>
 </head>
 <body>
+<div id="main">
   <% apis.each do |api| %>
-    <a href=""><%= api.title %></a> <br/>
+    <a href="<%= api.link %>"><%= api.title %></a> <br/>
   <% end %>
+</div>
 </body>
 </html>
 
