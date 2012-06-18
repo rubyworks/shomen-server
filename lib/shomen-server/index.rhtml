@@ -2,13 +2,22 @@
 <head>
   <title>Shomen Server</title>
   <style>
-    #main { text-align: center; }
+    #head { margin: 0 auto; width: 1024px; }
+    #main { margin: 0 auto; width: 1024px; }
+    .api { border: 1px solid #ccc; padding: 8px; }
   </style>
 </head>
 <body>
+
+<div id="head">
+  <h1>Shomen Server</h1>
+</div>
+
 <div id="main">
   <% apis.each do |api| %>
-    <a href="<%= api.link %>"><%= api.title %></a> <br/>
+    <div class="api">
+      <a href="<%= api.link %>"><%= api.title %> <%= api.version %></a>
+    </div>
   <% end %>
 </div>
 </body>

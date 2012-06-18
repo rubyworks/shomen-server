@@ -1,8 +1,8 @@
 ---
 - shomen
 - shomen-yard
-#- shomen-rdoc
-- rdoc-shomen
+- shomen-rdoc
+#- rdoc-shomen
 - qed     (test)
 - ae      (test)
 - detroit (build)

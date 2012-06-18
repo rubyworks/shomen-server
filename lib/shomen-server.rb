@@ -78,6 +78,7 @@ require 'erb'
 require 'tmpdir'
 
 require 'shomen-yard'
+require 'shomen-rdoc'
 
 require 'shomen-server/cli'
 require 'shomen-server/rack'
