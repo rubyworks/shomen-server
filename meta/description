@@ -1,4 +1,0 @@
-Shomen Server is a front end for viewing API documentation of locally
-installed gems. It is a dynamic server and will generate the documentation
-as needed. Shomen server support a number of different interface themes
-selectable from the main menu to suite different tastes.

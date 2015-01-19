@@ -1,0 +1,50 @@
+---
+name: 
+  shomen-server
+
+version:
+  0.1.0
+
+title:
+  Shomen Server
+
+summary:
+  Real-Time Documentation Server
+
+description:
+  Shomen Server is a front end for viewing API documentation of locally
+  installed gems. It is a dynamic server and will generate the documentation
+  as needed. Shomen server support a number of different interface themes
+  selectable from the main menu to suite different tastes.
+
+resources:
+  home: http://rubyworks.github.com/shomen-server
+  docs: http://github.com/rubyworks/shomen-server/wiki
+  code: http://github.com/rubyworks/shomen-server
+  bugs: http://github.com/rubyworks/shomen-server/issues
+  chat: http://chat.us.freenode.net/rubyworks
+
+requirements:
+- shomen
+- shomen-yard
+- shomen-rdoc
+#- rdoc-shomen
+- qed     (test)
+- ae      (test)
+- rake    (build)
+#- detroit (build)
+
+repositories:
+  upstream: git://github.com/rubyworks/shomen-server.git
+
+authors:
+- trans <transfire@gmail.com>
+
+organization:
+  Rubyworks
+
+created:
+  2010-07-01
+
+copyrights:
+  (c) 2010 Rubyworks (BSD-2-Clause)
